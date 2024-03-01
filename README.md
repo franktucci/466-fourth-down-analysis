@@ -258,7 +258,10 @@ K nearest neighbor had a much greater effectiveness due to it not being so impac
 Decision tree, while performing marginally worse than K nearest neighbors, was slightly more accurate in predicting when a team might try for a 1st down. The number of leaf nodes was capped at 25, as any additional nodes gave diminishing returns and made the tree harder to visualize. The amount of leaf nodes was capped, rather than tree depth, because some branches of the tree consisted of more uniform data than others. Unlike KNN, looking at the visualized decision tree gives interesting insight into the decision making that teams go through, beyond looking at any data point individually
 
 **Decision Tree Analysis**
-<img src="images/dtree.png" alt="Decision tree visualization" width="500" height="350">
+
+<img src="images/dtree.png" alt="Decision tree visualization" width="665" height="350">
+
+
 Expectedly, the decision tree finds that yards to goal is the most influential feature, dividing the decision tree between a field goal or try side on the left, and a punt or try side on the right. On the left, the tree identifies having a short number of yards to first, or a small amount of seconds left in the game, as reasons to try for 1st down instead of field goal. The graph identifies a -3.5 point spread, or being behind by more than a field goal, as the deciding factor at the end of the game between trying for 1st down or going for a field goal. On the right side, the graph identifies a -7.5 point spread, or being behind by more than a touchdown (with successful kick) as being the deciding factor between punting or going for a 1st down.
 
 **Conclusion**
